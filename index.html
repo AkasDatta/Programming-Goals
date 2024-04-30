@@ -8,7 +8,7 @@
      <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="bg-white my-8 max-w-screen-xl items-center justify-between mx-auto rounded-md">
+    <div class="bg-white my-8 max-w-screen-xl items-center justify-between mx-auto rounded-md p-8">
         <!-- <h2 class="text-center py-8 text-3xl font-bold text-blue-800">About Me</h2> -->
         <div class="justify-center flex items-center">
             <img src="/image/Campbell-University.png" class="w-48 h-48items-center" alt="">
@@ -17,32 +17,31 @@
             <img src="/image/1.png" class="w-full" alt="">
         </div>
         <div class="">
-            <div class="flex gap-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-14">
                 <div>
-                    <img class="object-cover h-56 w-96" src="/image/IMG_3652.jpeg" alt="">
-                    <div class="mt-16">
-                        <h2 class="text-3xl my-8">Education:</h2>
-                        <h2 class="text-xl "><span>Major:</span> Homeland Security</h2>
-                        <h2 class="text-xl my-1"><span>Minor:</span> Cyber Security</h2>
-                        <h2 class="text-xl my-1"><span>School:</span> Campbell University</h2>
-                    </div>
+                  <img class="object-cover h-72 w-full" src="/image/IMG_3652.jpeg" alt="Profile Image">
+                  <div class="mt-16">
+                    <h2 class="text-5xl my-8">Education:</h2>
+                    <h2 class="text-2xl"><span>Major:</span> Homeland Security</h2>
+                    <h2 class="text-2xl my-1"><span>Minor:</span> Cyber Security</h2>
+                    <h2 class="text-2xl my-1"><span>School:</span> Campbell University</h2>
+                  </div>
                 </div>
                 <div>
-                    <div class="text-6xl"> 
-                        <h2 class="font-serif mt-6">Madelyn Johnson</h2>
-                    </div>
-                    <div class="my-8">
-                        <h2 class="text-xl mb-1">Hobbies:</h2>
-                        <h2 class="text-blue-700 text-2xl">Snowboarding, Thrifting, Hiking</h2>
-                    </div>
-                    <div class="pt-16">
-                        <video width="420" height="320" controls>
-                            <source src="/videos/aboutmewebpage.mov" type="video/mp4">
-                          Your browser does not support the video tag.
-                          </video>
-                    </div>
+                  <h2 class="text-6xl font-serif mt-10">Madelyn Johnson</h2>
+                  <div class="my-8">
+                    <h2 class="text-xl mb-1">Hobbies:</h2>
+                    <h2 class="text-blue-700 text-2xl">Snowboarding, Thrifting, Hiking</h2>
+                  </div>
+                  <div class="pt-24">
+                    <video width="480" height="320" controls>
+                      <source src="/videos/aboutmewebpage.mov" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
-            </div>
+              </div>
+              
             <div class="my-12 flex gap-2 text-3xl">
                 <h2>Have any questions?</h2>
                 <a href="/contact.html" class="text-blue-800 ">Contact me</a>
