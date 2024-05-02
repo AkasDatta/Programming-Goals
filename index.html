@@ -9,9 +9,16 @@
 </head>
 <body>
     <div class="bg-white my-8 max-w-screen-xl items-center justify-between mx-auto rounded-md px-8">
-        <!-- <h2 class="text-center py-8 text-3xl font-bold text-blue-800">About Me</h2> -->
-        <div class="justify-center flex items-center">
-            <img src="/image/Campbell-University.png" class="w-48 h-48items-center" alt="">
+        <div class="grid grid-cols-3">
+          <div class="justify-center flex items-center">
+            <h1 class="text-blue-700 font-bold text-3xl" id="current-time"></h1>
+          </div>
+          <div class="justify-center flex items-center">
+              <img src="/image/Campbell-University.png" class="w-48 h-48 items-center" alt="">
+          </div>
+          <div class="justify-center flex items-center">
+            <img src="/image/linkedin (2).png" class="w-40 h-12 items-center" alt="">
+          </div>
         </div>
         <div class="justify-center flex items-center mb-8">
             <img src="/image/1.png" class="w-full" alt="">
@@ -48,5 +55,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+      let time = document.getElementById("current-time");
+      
+      setInterval(() => {
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+      },1000)
+    </script>
 </body>
 </html>
